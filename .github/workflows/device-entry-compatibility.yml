@@ -1,0 +1,27 @@
+name: iCloud3 device registry compatibility
+
+on:
+  push:
+    branches:
+      - fix/ha-device-entry-deprecations
+  pull_request:
+    paths:
+      - 'custom_components/icloud3/utils/entity_reg_util.py'
+      - 'tests/test_device_registry_compat.py'
+      - '.github/workflows/device-entry-compatibility.yml'
+  workflow_dispatch:
+
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.13', '3.14']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install pytest
+      - run: python -m compileall -q custom_components/icloud3/utils/entity_reg_util.py
+      - run: python -m pytest -q tests/test_device_registry_compat.py

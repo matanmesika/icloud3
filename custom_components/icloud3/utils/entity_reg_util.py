@@ -52,7 +52,7 @@ def async_handle_update_device_registry(event: dr.EventDeviceRegistryUpdatedData
         device_data = get_device(device_id)
 
         if (device_data is None
-                or device_data.primary_config_entry != Gb.config_entry_id):
+                or device_data.config_entry_id != Gb.config_entry_id):
             return
 
         # Being deleted by iCloud3 Config Flow, cancel listener handler
@@ -1065,7 +1065,7 @@ def _set_device_reg_data(device_data):
     data_item['device_id']       = device_data.id
     data_item['area_id']         = device_data.area_id
     data_item['entity_key']      = None
-    data_item['config_entry_id'] = set_item(device_data.config_entries)
+    data_item['config_entry_id'] = device_data.config_entry_id
     data_item['disabled_by']     = device_data.disabled_by
     data_item['status']          = None
     data_item['domain']          = domain
