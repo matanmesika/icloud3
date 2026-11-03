@@ -169,7 +169,7 @@
       "auth_code_invalid_text": "❌ The Auth Code was not correct. Enter the Text Msg code, not the Push Popup window code",
       "auth_code_send_error": "❌ Failed to send the Authentication Code",
       "auth_code_requested_423": "Too many codes have been requested for that phone number. Use a different Trusted Phone Number or try again later",
-      "hwkey_waiting_for_keypress": "⛔ ① SELECT AUTHENTICATE, ② TOUCH THE SECURITY KEY ⛔ ",
+      "hwkey_waiting_for_keypress": "⛔ ① SELECT AUTHENTICATE, ② TOUCH THE SECURITY KEY ⛔",
       "hwkey_auth_succeeded": "✅ Security Key authentication succeeded. Reauthentication is complete",
       "hwkey_names_refreshed": "✅ Security Key names refreshed from Apple",
       "hwkey_names_none": "❌ No Security Keys were found in the Apple Account",
