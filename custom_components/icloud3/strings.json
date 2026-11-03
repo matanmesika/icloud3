@@ -5,7 +5,7 @@
       "translation_file_by": "@gcobb321",
 
       "option_msg_inenjson": "out_of_range: Value must be between {min} and {max}.",
-      "option_msg_inform":   "description_placeholders={'min': '1', 'max': '10'}",
+      "option_msg_inform":   "description_placeholders={{'min': '1', 'max': '10'}}",
 
       "config_update_complete": "✅ iCloud3 configuration updated successfully",
       "already_configured": "iCloud3 Configure screens are used to add Devices and change various settings.\n\nClose this screen, then select the Gear icon (⚙️) below. \n\nIf you are deleting and then reinstalling the iCloud3 integration, delete iCloud3, then restart HA to clear HA's caches. After HA restarts, readd the iCloud3 integration. Your previous configuration files are not deleted and will be used when iCloud3 reloads.",
@@ -40,7 +40,7 @@
       "auth_code_send_error": "❌ Failed to send the Authentication Code",
       "auth_code_requested_423": "Too many codes have been requested for that phone number. Use a different Trusted Phone Number or try again later",
 
-      "hwkey_waiting_for_keypress": "⛔ ① SELECT AUTHENTICATE, ② TOUCH THE SECURITY KEY ⛔ ",
+      "hwkey_waiting_for_keypress": "⛔ ① SELECT AUTHENTICATE, ② TOUCH THE SECURITY KEY ⛔",
       "hwkey_auth_succeeded": "✅ Security Key authentication succeeded. Reauthentication is complete",
       "hwkey_names_refreshed": "✅ Security Key names refreshed from Apple",
       "text_or_hwkey_none": "❌ No Trusted Phone Numbers or Security Keys were found in the Apple Account",
@@ -81,7 +81,7 @@
           "account_selected": "APPLE ACCOUNT",
           "auth_method": "METHOD - Send the Code to a Push Notification Window, in a Text Msg or use a Security Key",
           "auth_code": "AUTHENTICATION CODE - Authenticate Code displayed on the Trusted Devices",
-          "terms_of_use": "TERMS OF USE - Accept Apple `Terms of Use`. For more information, go to http://icloud.com",
+          "terms_of_use": "TERMS OF USE - Accept Apple `Terms of Use`. For more information, go to icloud.com",
           "action_items": "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ ACTION COMMANDS"
         }
       },
@@ -98,12 +98,12 @@
 
       "reauth_hwkey_progress": {
         "title": "Touch the Security Security Key",
-        "description": "{spinner}  Touch key '{key_name}' on the HA server now\n\nTimeout in {remaining} seconds"
+        "description": "{spinner}  Touch key {key_name} on the HA server now\n\nTimeout in {remaining} seconds"
       },
 
       "reauth_code_from_applecom_login": {
         "title": "Get an Authentication Code from Apple.com",
-        "description": "If you request an Authentication Code but the *Apple Acct Sign-in is Requested* window or the Text Message never arrives, follow these steps to generate one: \n\n**&#9312; Go to your Apple Account Signin screen** - Click this link to go to your Apple Account Sign-in screen in a web browser  https://appleid.apple.com/ \n* If you are already signed in, sign out \n* If you are on a device with Face ID, cover the camera so you are not automatically signed into your account again.\n\n**&#9313; Sign into your Apple Account** - Enter your _**username**_, tap _**Continue**_, enter your _**password**_, tap _**Sign-in**_. If you are using a device with Face ID (iPhone, iPad), you may have to select _Use a different Apple Account_ to bypass the Face Id process.\n\n* The auth code will be displayed on a Trusted Device as it always is.\n* Display the auth code as you normally do.\n\n _**Do not enter it on apple.com. That will authenticate apple.com, not iCloud3**_\n\n**&#9314; Return to this screen** - If you opened a browser tab (i.e., Windows) to log into your Apple Account, you can close it.\n\n**&#9315; Authenticate iCloud3** - Enter the auth code in the field below and send it to Apple for verification. If it is not accepted, follow these same steps again to get a new code.",
+        "description": "If you request an Authentication Code but the *Apple Acct Sign-in is Requested* window or the Text Message never arrives, follow these steps to generate one: \n\n**&#9312; Go to your Apple Account Signin screen** - Click this link to go to your Apple Account Sign-in screen in a web browser  appleid.apple.com \n* If you are already signed in, sign out \n* If you are on a device with Face ID, cover the camera so you are not automatically signed into your account again.\n\n**&#9313; Sign into your Apple Account** - Enter your _**username**_, tap _**Continue**_, enter your _**password**_, tap _**Sign-in**_. If you are using a device with Face ID (iPhone, iPad), you may have to select _Use a different Apple Account_ to bypass the Face Id process.\n\n* The auth code will be displayed on a Trusted Device as it always is.\n* Display the auth code as you normally do.\n\n _**Do not enter it on apple.com. That will authenticate apple.com, not iCloud3**_\n\n**&#9314; Return to this screen** - If you opened a browser tab (i.e., Windows) to log into your Apple Account, you can close it.\n\n**&#9315; Authenticate iCloud3** - Enter the auth code in the field below and send it to Apple for verification. If it is not accepted, follow these same steps again to get a new code.",
           "data": {
             "auth_code": "AUTHENTICATION CODE - Authentication Code just received by logging into your Apple Account",
           "action_items": "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ ACTION COMMANDS"
@@ -187,7 +187,7 @@
       "auth_code_send_error": "❌ Failed to send the Authentication Code",
       "auth_code_requested_423": "Too many codes have been requested for that phone number. Use a different Trusted Phone Number or try again later",
 
-      "hwkey_waiting_for_keypress": "⛔ ① SELECT AUTHENTICATE, ② TOUCH THE SECURITY KEY ⛔ ",
+      "hwkey_waiting_for_keypress": "⛔ ① SELECT AUTHENTICATE, ② TOUCH THE SECURITY KEY ⛔",
       "hwkey_auth_succeeded": "✅ Security Key authentication succeeded. Reauthentication is complete",
       "hwkey_names_refreshed": "✅ Security Key names refreshed from Apple",
       "hwkey_names_none": "❌ No Security Keys were found in the Apple Account",
@@ -276,7 +276,7 @@
 
       "menu_0": {
         "title": "Configure Devices & Sensors",
-        "xdescription": "This menu contains items related to Apple Accounts, Tracked Devices, Apple Authentication, Sensors, iCloud3 Dashboard and Maintenance Tools",
+        "description": "This menu contains items related to Apple Accounts, Tracked Devices, Apple Authentication, Sensors, iCloud3 Dashboard and Maintenance Tools",
         "data": {
           "menu_items": "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ PRIMARY MENU SELECTIONS",
           "action_items": "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ ACTION COMMANDS"
@@ -285,7 +285,7 @@
 
       "menu_1": {
         "title": "Configure Parameters",
-        "xdescription": "This menu contains items related to configuring how iCloud3 should track devices and how the results should be reported",
+        "description": "This menu contains items related to configuring how iCloud3 should track devices and how the results should be reported",
         "data": {
           "menu_items": "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ SECONDARY MENU SELECTIONS",
           "action_items": "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ ACTION COMMANDS"
@@ -330,7 +330,7 @@
         "data": {
           "data_source": "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ DATA SOURCE",
           "data_source_apple_acct": "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ APPLE ICLOUD ACCOUNTS",
-          "apple_accts": " ",
+          "apple_accts": "Apple Accounts",
           "data_source_mobapp": "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯",
           "xdata_source_mobapp": "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ MOBILE APP INTEGRATION",
           "action_items":       "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ ACTION COMMANDS"
@@ -361,9 +361,6 @@
           "apple_server_location_needed": "APPLE SERVER LOCATION (CHINA) - Always display Apple Server Location Selection field on `Apple Acct Username/Password` screen (China, Hong Kong)",
           "server_location": "APPLE SERVER LOCATION - The country hosting this account's Apple Server",
           "action_items": "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ ACTION COMMANDS"
-        },
-        "data_description": {
-          "password_srp_enabled": "This indicates how the password should be verified when logging into the Apple Account. The PasswordSRP protocol sends an encoded key over the internet to Apple instead of sending the password itself. \n • ENABLED - Use the Password SRP Protocol\n • DISABLED - Use the standard Password protocol\n • NOTES - There are times when Appple servers will refuse the password if too many login attempts have been made in a short period of time. This is done  to prevent fraudulent logins. An Error 503-Server Refuses Connection is returned."
         }
       },
 
@@ -383,7 +380,7 @@
           "account_selected": "APPLE ACCOUNT TO BE AUTHENTICATED",
           "auth_method": "METHOD - Send the Code to a Push Notification Window, in a Text Msg or use a Security Key",
           "auth_code": "AUTHENTICATION CODE - Authenticate Code displayed on the Trusted Devices",
-          "terms_of_use": "TERMS OF USE - Accept Apple `Terms of Use`. For more information, go to http://icloud.com",
+          "terms_of_use": "TERMS OF USE - Accept Apple `Terms of Use`. For more information, go to icloud.com",
           "action_items": "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ ACTION COMMANDS"
         }
       },
@@ -400,12 +397,12 @@
 
       "reauth_hwkey_progress": {
         "title": "Touch the Security Security Key",
-        "description": "{spinner}  Touch key '{key_name}' on the HA server now\n\nTimeout in {remaining} seconds"
+        "description": "{spinner}  Touch key {key_name} on the HA server now\n\nTimeout in {remaining} seconds"
       },
 
       "reauth_code_from_applecom_login": {
         "title": "Get an Authentication Code from Apple.com",
-        "description": "If you request an Authentication Code but the *Apple Acct Sign-in is Requested* window or the Text Message never arrives, follow these steps to generate one: \n\n**&#9312; Go to your Apple Account Signin screen** - Click this link to go to your Apple Account Sign-in screen in a web browser  https://appleid.apple.com/ \n* If you are already signed in, sign out \n* If you are on a device with Face ID, cover the camera so you are not automatically signed into your account again.\n\n**&#9313; Sign into your Apple Account** - Enter your _**username**_, tap _**Continue**_, enter your _**password**_, tap _**Sign-in**_. If you are using a device with Face ID (iPhone, iPad), you may have to select _Use a different Apple Account_ to bypass the Face Id process.\n\n* The auth code will be displayed on a Trusted Device as it always is.\n* Display the auth code as you normally do.\n\n _**Do not enter it on apple.com. That will authenticate apple.com, not iCloud3**_\n\n**&#9314; Return to this screen** - If you opened a browser tab (i.e., Windows) to log into your Apple Account, you can close it.\n\n**&#9315; Authenticate iCloud3** - Enter the auth code in the field below and send it to Apple for verification. If it is not accepted, follow these same steps again to get a new code.",
+        "description": "If you request an Authentication Code but the *Apple Acct Sign-in is Requested* window or the Text Message never arrives, follow these steps to generate one: \n\n**&#9312; Go to your Apple Account Signin screen** - Click this link to go to your Apple Account Sign-in screen in a web browser  appleid.apple.com \n* If you are already signed in, sign out \n* If you are on a device with Face ID, cover the camera so you are not automatically signed into your account again.\n\n**&#9313; Sign into your Apple Account** - Enter your _**username**_, tap _**Continue**_, enter your _**password**_, tap _**Sign-in**_. If you are using a device with Face ID (iPhone, iPad), you may have to select _Use a different Apple Account_ to bypass the Face Id process.\n\n* The auth code will be displayed on a Trusted Device as it always is.\n* Display the auth code as you normally do.\n\n _**Do not enter it on apple.com. That will authenticate apple.com, not iCloud3**_\n\n**&#9314; Return to this screen** - If you opened a browser tab (i.e., Windows) to log into your Apple Account, you can close it.\n\n**&#9315; Authenticate iCloud3** - Enter the auth code in the field below and send it to Apple for verification. If it is not accepted, follow these same steps again to get a new code.",
           "data": {
             "auth_code": "AUTHENTICATION CODE - Authentication Code just received by logging into your Apple Account",
           "action_items": "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ ACTION COMMANDS"
@@ -505,7 +502,7 @@
 
       "review_inactive_devices": {
         "title": "Review Untracked (Inactive) Devices",
-        "description": "A large number of devices are set to Inactive and will not be located or tracked. Review and change the device status On this screen. ",
+        "description": "A large number of devices are set to Inactive and will not be located or tracked. Review and change the device status On this screen.",
         "data": {
           "inactive_devices": "TRACK DEVICES - Update these Devices to Tracked (from Inactive)",
           "action_items": "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ ACTION COMMANDS"
@@ -548,8 +545,8 @@
           "action_items": "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ ACTION COMMANDS"
         },
         "data_description": {
-          "time_zone_1_offset": "PRIMARY DEVICES & LOCATION TIME - Devices and the current location time when away and in another time zone",
-          "time_zone_2_offset": "SECONDARY DEVICES & LOCATION TIME - Devices and the current location time when away and in another time zone"
+          "away_time_zone_1_offset": "PRIMARY DEVICES & LOCATION TIME - Devices and the current location time when away and in another time zone",
+          "away_time_zone_2_offset": "SECONDARY DEVICES & LOCATION TIME - Devices and the current location time when away and in another time zone"
         }
       },
 
@@ -592,7 +589,7 @@
 
       "cleanup_entity_registry": {
         "title": "Cleanup HA Entity Registry Devices & Sensors",
-        "description": "This screen is used to delete unwanted iCloud3 device_tracker and sensor entities from the HA Device and Entity Registries. The entities are analyzed and displayed the following groups: active, inactive, orphaned, deleted devices, deleted sensors, disabled and HA duplicates (those with a `_2` suffix). ",
+        "description": "This screen is used to delete unwanted iCloud3 device_tracker and sensor entities from the HA Device and Entity Registries. The entities are analyzed and displayed the following groups: active, inactive, orphaned, deleted devices, deleted sensors, disabled and HA duplicates (those with a `_2` suffix).",
         "data": {
           "active": "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯  ACTIVE DEVICES - Devices that are being tracked by iCloud3. 🛈These devices will be deleted and then recreated.",
           "inactive": "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯  INACTIVE DEVICES - Devices that are set to `Inactive` and not tracked by iCloud3.",
@@ -602,7 +599,7 @@
           "deleted_sensors": "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯  DELETED SENSORS - Sensors that belong to an iCloud3 device that are no longer used",
           "suffix_error": "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯  SUFFIX ERRORS > Sensors that have been duplicated by HA and are now Unavailable (`[sensor]` & `[sensor_2]`)",
           "other": "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯  OTHER SENSORS > Sensors that were not in the other groups",
-          "check_all": " ",
+          "check_all": "Select All",
           "action_items": "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ ACTION COMMANDS"
         }
       },
@@ -611,7 +608,7 @@
         "title": "Tracking Parameters",
         "description": "Many parameters are used when tracking a device and displaying the results. These include how poor GPS Accuracy should be handled, various polling interval values and zone distances used to set the time to locate the device. They are customized on this screen.",
         "data": {
-          "data_source": "GPS LOCATION AND ZONE TRIGGER DATA SOURCES ",
+          "data_source": "GPS LOCATION AND ZONE TRIGGER DATA SOURCES",
           "discard_poor_gps_inzone": "DISCARD POOR RESULTS",
           "gps_accuracy_threshold": "GPS ACCURACY THRESHOLD",
           "old_location_threshold": "OLD LOCATION THRESHOLD",
