@@ -98,7 +98,7 @@
 
       "reauth_hwkey_progress": {
         "title": "Touch the Security Security Key",
-        "description": "{spinner}  Touch key '{key_name}' on the HA server now\n\nTimeout in {remaining} seconds"
+        "description": "{spinner}  Touch key {key_name} on the HA server now\n\nTimeout in {remaining} seconds"
       },
 
       "reauth_code_from_applecom_login": {
@@ -400,7 +400,7 @@
 
       "reauth_hwkey_progress": {
         "title": "Touch the Security Security Key",
-        "description": "{spinner}  Touch key '{key_name}' on the HA server now\n\nTimeout in {remaining} seconds"
+        "description": "{spinner}  Touch key {key_name} on the HA server now\n\nTimeout in {remaining} seconds"
       },
 
       "reauth_code_from_applecom_login": {
