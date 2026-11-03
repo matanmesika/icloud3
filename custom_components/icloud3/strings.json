@@ -5,7 +5,7 @@
       "translation_file_by": "@gcobb321",
 
       "option_msg_inenjson": "out_of_range: Value must be between {min} and {max}.",
-      "option_msg_inform":   "description_placeholders={'min': '1', 'max': '10'}",
+      "option_msg_inform":   "description_placeholders={{'min': '1', 'max': '10'}}",
 
       "config_update_complete": "✅ iCloud3 configuration updated successfully",
       "already_configured": "iCloud3 Configure screens are used to add Devices and change various settings.\n\nClose this screen, then select the Gear icon (⚙️) below. \n\nIf you are deleting and then reinstalling the iCloud3 integration, delete iCloud3, then restart HA to clear HA's caches. After HA restarts, readd the iCloud3 integration. Your previous configuration files are not deleted and will be used when iCloud3 reloads.",
